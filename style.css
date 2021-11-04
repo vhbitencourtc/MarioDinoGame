@@ -1,0 +1,50 @@
+/*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+body {
+  background: #2f50fd;
+}
+
+.mario {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(mario.png);
+}
+
+.tortuga {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(tortugue.png);
+}
+
+.game-over {
+  text-align: center;
+  color: #ffffff;
+  margin: 50px 0;
+  font-family: Arial;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+.backg {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(background.jpg);
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  width: 90%;
+  height: 74%;
+}
